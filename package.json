@@ -1,0 +1,17 @@
+{
+  "name": "@bleeno/queue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@citizenfx/server": "2.0.6704-1",
+    "@types/node": "^20.6.3",
+    "typescript": "^5.2.2"
+  }
+}
