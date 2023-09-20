@@ -52,18 +52,18 @@ class Queue {
           `Your position in queue ${pos + 1}/${waitingCount}`
         );
       }
-
-      const firstPlayer = this.connecting[0];
-      if (!firstPlayer) return;
-
-      const playerCount = GetNumPlayerIndices();
-      const maxPlayers = GetConvarInt("sv_maxClients", 1);
-
-      if (playerCount >= maxPlayers) return;
-
-      player.defferals.done();
-      this.connecting.splice(0, 1);
     });
+
+    const firstPlayer = this.connecting[0];
+    if (!firstPlayer) return;
+
+    const playerCount = GetNumPlayerIndices();
+    const maxPlayers = GetConvarInt("sv_maxClients", 1);
+
+    if (playerCount >= maxPlayers) return;
+
+    player.defferals.done();
+    this.connecting.splice(0, 1);
   }
 
   private async onPlayerConnect(
