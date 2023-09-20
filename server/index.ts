@@ -62,7 +62,7 @@ class Queue {
 
     if (playerCount >= maxPlayers) return;
 
-    player.defferals.done();
+    firstPlayer.defferals.done();
     this.connecting.splice(0, 1);
   }
 
